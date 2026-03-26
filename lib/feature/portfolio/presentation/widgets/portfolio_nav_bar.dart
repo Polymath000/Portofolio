@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:portofolio/config/app_breakpoints.dart';
 import 'package:portofolio/core/constants/app_colors.dart';
 import 'package:portofolio/feature/portfolio/presentation/models/portfolio_section_id.dart';
+import 'package:portofolio/feature/portfolio/presentation/widgets/portfolio_logo.dart';
 
 /// Sticky top navigation for the one-page portfolio.
 class PortfolioNavBar extends StatelessWidget {
@@ -64,17 +65,9 @@ class PortfolioNavBar extends StatelessWidget {
   }
 
   Widget _buildDesktop(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-
     return Row(
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Abdelrahman Khaled', style: textTheme.titleMedium),
-            Text('Flutter mobile developer', style: textTheme.bodySmall),
-          ],
-        ),
+        const PortfolioLogo(showWordmark: true),
         const Spacer(),
         Wrap(
           spacing: 8,
@@ -92,7 +85,8 @@ class PortfolioNavBar extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('AK', style: textTheme.titleMedium),
+            const PortfolioLogo(),
+            const SizedBox(height: 4),
             Text(
               activeSection.navLabel,
               style: textTheme.bodySmall?.copyWith(color: AppColors.accent),

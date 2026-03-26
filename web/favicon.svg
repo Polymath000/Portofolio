@@ -1,0 +1,24 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C2531"/>
+      <stop offset="1" stop-color="#131922"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="48" y1="18" x2="84" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#48E5C2" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#65A8FF" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="32" fill="url(#bg)" stroke="#273242" stroke-width="4"/>
+  <path d="M30 90L56 34H71L45 90H30Z" fill="url(#accent)"/>
+  <circle cx="92" cy="38" r="6" fill="#48E5C2"/>
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="38"
+    font-weight="800"
+    letter-spacing="-3"
+    fill="#F3F5F7">AK</text>
+</svg>
